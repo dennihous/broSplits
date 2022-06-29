@@ -1,5 +1,26 @@
 {
   "dependencies": {
     "express": "^4.18.1"
-  }
+  },
+  "name": "brosplits",
+  "description": "",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "watch": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dennihous/broSplits.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dennihous/broSplits/issues"
+  },
+  "homepage": "https://github.com/dennihous/broSplits#readme"
 }
