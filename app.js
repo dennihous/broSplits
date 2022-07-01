@@ -6,7 +6,15 @@ app.use(express.static(__dirname + "/static"));
 
 app.get('/', (req, res) => {
   console.log(process.cwd())
-  res.sendFile('/Users/dennishouston/Projects/broSplits/broSplits/index.html')
+  res.sendFile(process.cwd().concat('/index.html'))
+})
+
+app.get('/style.css', (req, res) => {
+  res.sendFile('/Users/dennishouston/Projects/broSplits/broSplits/style.css')
+})
+
+app.get('/about', (req, res) => {
+  res.sendFile('/Users/dennishouston/Projects/broSplits/broSplits/about.html')
 })
 
 app.get('/')
