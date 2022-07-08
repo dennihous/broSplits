@@ -5,7 +5,7 @@ const port = 3000
 app.use(express.static(__dirname + "/static"));
 
 app.get('/', (req, res) => {
-  res.sendFile(process.cwd().concat('/routes/index.html'))
+  res.sendFile(process.cwd().concat('/routes/index.html'))               
 })
 
 app.get('/style.css', (req, res) => {
