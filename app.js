@@ -27,7 +27,7 @@ app.get('/services', (req, res) => {
 })
 
 app.get('/BMI', (req, res) => {
-  res.render('BMI')
+  res.render('bmi')
 })
 
 app.get('/contact', (req, res) => {
