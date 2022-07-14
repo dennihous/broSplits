@@ -1,25 +1,27 @@
 <h1>BMI</h1>
 <br>
-<form action="/my-handling-form-page" method="post" class="bmi">
+<div class="bmi">
  <ul>
   <li>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="user_name">
+    <input type="number" id="weight" placeholder="Weight" name="weight">
   </li>
   <br>
   <li>
-    <label for="mail">E-mail:</label>
-    <input type="email" id="mail" name="user_email">
+    <input type="number" id="height" placeholder="Height" name="height">
   </li>
   <br>
-  <li>
-    <label for="weight">Weight:</label>
-    <input type="number" id="weight" name="weight"></textarea>
-  </li>
-  <br>
-  <li>
-    <label for="height">Height:</label>
-    <input type="number" id="height" name="height"></textarea>
-  </li>
+  <script type="text/javascript">
+    function bmiCalculator(){
+      var h = document.getElementById("height").value;
+      var w = document.getElementById("weight").value;
+      var bmi =  h/(w*w)
+      document.getElementById("result").innerHTML="Your BMI is: " + bmi;
+    }
+  </script>
+  <li class="button">
+  <button onclick="bmiCalculator()">Calculate BMI</button>
+  <br><br>
+  <p id="result"></p>
+</li>
  </ul>
-</form>
+</div>
