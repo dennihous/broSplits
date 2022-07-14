@@ -42,3 +42,6 @@ ul.menu li a:hover {
      font-size: 20px;
   }
 }
+form.bmi ul li {
+  list-style-type: none;
+}
