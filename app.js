@@ -11,7 +11,7 @@ app.use(express.static(__dirname + "/static"));
 
 app.get('/', (req, res) => {
   // res.sendFile(process.cwd().concat('/routes/index.html')) 
-  res.render('home', {name: 'Dennis'})              
+  res.render('home')              
 })
 
 app.get('/style.css', (req, res) => {
@@ -19,19 +19,19 @@ app.get('/style.css', (req, res) => {
 })
 
 app.get('/about', (req, res) => {
-  res.sendFile(process.cwd().concat('/routes/about.html'))
+  res.render('about')
 })
 
 app.get('/services', (req, res) => {
-  res.sendFile(process.cwd().concat('/routes/services.html'))
+  res.render('services')
 })
 
 app.get('/BMI', (req, res) => {
-  res.sendFile(process.cwd().concat('/routes/bmi.html'))
+  res.render('BMI')
 })
 
 app.get('/contact', (req, res) => {
-  res.sendFile(process.cwd().concat('/routes/contact.html'))
+  res.render('contact')
 })
 
 app.listen(port, () => {
