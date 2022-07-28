@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 
 app.get('/github-icon.svg', (req, res) => {
   console.log('-----', process.cwd().concat('/github-icon.svg'))
-  res.sendFile(process.cwd().concat('/github-icon.svg'))
+  res.sendFile(process.cwd().concat('/images/github-icon.svg'))
 })
 
 app.get('/style.css', (req, res) => {
