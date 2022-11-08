@@ -3,7 +3,8 @@
     "@mui/icons-material": "^5.8.4",
     "express": "^4.18.1",
     "express-handlebars": "^6.0.6",
-    "mongodb": "^4.8.1"
+    "mongodb": "^4.8.1",
+    "mongoose": "^6.5.0"
   },
   "name": "brosplits",
   "description": "",
@@ -24,5 +25,6 @@
   "bugs": {
     "url": "https://github.com/dennihous/broSplits/issues"
   },
-  "homepage": "https://github.com/dennihous/broSplits#readme"
+  "homepage": "https://github.com/dennihous/broSplits#readme",
+  "devDependencies": {}
 }
