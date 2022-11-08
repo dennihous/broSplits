@@ -10,7 +10,6 @@ app.set('views', './views');
 app.use(express.static(__dirname + "/static"));
 
 app.get('/', (req, res) => {
-  // res.sendFile(process.cwd().concat('/routes/index.html')) 
   res.render('home')              
 })
 
