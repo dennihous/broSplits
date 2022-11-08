@@ -1,7 +1,7 @@
 const express = require('express')
 const engine = require('express-handlebars').engine
 const app = express()
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 8082
 
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
@@ -40,5 +40,5 @@ app.get('/contact', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Server running on port ${port}`)
 })
