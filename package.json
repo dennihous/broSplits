@@ -1,10 +1,13 @@
 {
   "dependencies": {
     "@mui/icons-material": "^5.8.4",
-    "express": "^4.18.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "express-handlebars": "^6.0.6",
     "mongodb": "^4.8.1",
-    "mongoose": "^6.5.0"
+    "mongoose": "^6.7.2",
+    "validation": "^0.0.1"
   },
   "name": "brosplits",
   "description": "",
@@ -20,11 +23,10 @@
     "url": "git+https://github.com/dennihous/broSplits.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "dennihous",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dennihous/broSplits/issues"
   },
-  "homepage": "https://github.com/dennihous/broSplits#readme",
-  "devDependencies": {}
+  "homepage": "https://github.com/dennihous/broSplits#readme"
 }
