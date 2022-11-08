@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/dennihous/broSplits/issues"
   },
-  "homepage": "https://github.com/dennihous/broSplits#readme"
+  "homepage": "https://github.com/dennihous/broSplits#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
