@@ -1,4 +1,5 @@
 const express = require('express')
+const connectDB = require('./config/db');
 const engine = require('express-handlebars').engine
 const app = express()
 const port = process.env.PORT || 8082
@@ -7,6 +8,9 @@ app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
 app.set('views', './views');
 
+// Connect Database
+connectDB();
+
 app.use(express.static(__dirname + "/static"));
 
 app.get('/', (req, res) => {
@@ -14,7 +18,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/github-icon.svg', (req, res) => {
-  console.log('-----', process.cwd().concat('/github-icon.svg'))
+  // console.log('-----', process.cwd().concat('/github-icon.svg'))
   res.sendFile(process.cwd().concat('/images/github-icon.svg'))
 })
 
